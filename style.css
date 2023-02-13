@@ -1,6 +1,6 @@
 .container {
     height: 100vh;
-    width: 100vw;
+    width: 1000vw;
     background-color: #090909;
   }
   .ghost {
@@ -30,3 +30,12 @@
     background-attachment: fixed;
   }
   
+  .text-box {
+    width: 800px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+  }

@@ -6,7 +6,7 @@ document.addEventListener('mousemove', (event) => {
 });
 
 const typingText = document.getElementById('typing-text');
-      const text = "Ghost Mode Activated !!!";
+      const text = "Oh fantastic, ghost mode is activated. I'm sure my friends and followers will be over the moon that they can no longer stalk my every move. I can finally go back to living a life of mystery and intrigue, just like the spy I've always dreamed of being. This is truly a dream come true.";
       let index = 0;
 
       function type() {
