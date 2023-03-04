@@ -1,12 +1,5 @@
-const ghost = document.querySelector('.ghost');
-
-document.addEventListener('mousemove', (event) => {
-  ghost.style.left = event.clientX + 'px';
-  ghost.style.top = event.clientY + 'px';
-});
-
 const typingText = document.getElementById('typing-text');
-      const text = "Oh fantastic, ghost mode is activated. I'm sure my friends and followers will be over the moon that they can no longer stalk my every move. I can finally go back to living a life of mystery and intrigue, just like the spy I've always dreamed of being. This is truly a dream come true.";
+      const text = "Experienced DevOps System Engineer with a focus on results who has worked in the fields of software configuration management, quality assurance, DevOps/build, and release management for many years. Significant proficiency with Amazon Web Services (AWS) infrastructure, Devops engineering, development and configuration, scripting tools, and system development tools are among the core competencies. Excellent technical troubleshooting abilities with system software and web platforms, experience previously assisting and working with system monitoring teams, DevOps engineers, and software development teams.";
       let index = 0;
 
       function type() {
