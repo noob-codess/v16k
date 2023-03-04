@@ -403,38 +403,58 @@ input {
     color: rgb(255 255 255 / 50%);
 }
 
-@media(max-width: 500px) {
+/* Styles for screen sizes larger than 768px */
+@media (min-width: 768px) {
     body {
-        overflow: auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    /* Add more styles for larger screens */
+  }
+  
+  /* Styles for screen sizes larger than 992px */
+  @media (min-width: 992px) {
+    body {
+      font-size: 20px;
+      line-height: 1.7;
+    }
+    /* Add more styles for larger screens */
+  }
+  
+  /* Styles for screen sizes larger than 1200px */
+  @media (min-width: 1200px) {
+    body {
+      font-size: 22px;
+      line-height: 1.8;
+    }
+    /* Add more styles for larger screens */
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Apply different styles for screens up to 768px wide */
+    .social-buttons {
+        flex-direction: column;
+        top: auto;
+        bottom: 10px;
+        right: auto;
+        left: 10px;
     }
 
-    #phone {
-        height: 100vh;
-        display: flex;
-        width: 100%;
-        margin: 0px auto;
+    .social-button {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
-
-    #main-wrapper {
-        width: 100%;
-        flex-grow: 1;
-    }
+}  
+.social-button {
+    position: fixed;
+    top: 10px;
+    right: 5px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .social-button {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: none;
-    width: 40px;
-    height: 40px;
-    text-decoration: none;
-    border: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    background: none;
+    margin-right: 10px; /* adjust the spacing between buttons */
 }
 
 .social-button::after {
