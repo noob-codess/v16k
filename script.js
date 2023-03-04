@@ -11,3 +11,9 @@ const typingText = document.getElementById('typing-text');
       }
 
       type();
+
+
+function navigateToLink(link) {
+    window.location.href = link;
+}
+
