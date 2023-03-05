@@ -431,6 +431,18 @@ input {
     /* Add more styles for larger screens */
   }
 
+  @media (max-width: 768px) {
+    #apps-container {
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #apps-container {
+      grid-template-columns: 100%;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     /* Apply different styles for screens up to 768px wide */
     .social-buttons {
