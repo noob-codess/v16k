@@ -230,6 +230,14 @@ input {
     margin-top: 2rem;
 }
 
+#typing-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: relative;
+  }
+  
+
 #aboutme-container img {
     max-width: 100%;
     height: auto;
