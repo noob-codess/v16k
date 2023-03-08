@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="DevOps Engineer, automation, cloud computing, continuous integration, deployment, monitoring">
+  <meta name="keywords"
+    content="DevOps Engineer, automation, cloud computing, continuous integration, deployment, monitoring">
   <title>v16k - home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,13 +23,13 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-368FHDKMGB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-368FHDKMGB');
 </script>
 
-<body>
+<body onload="displayDay()">
   <div id="main-wrapper" class="fancy-scrollbar">
     <div id="main">
 
@@ -41,7 +42,7 @@
 
         <div class="social-buttons">
           <a href="https://github.com/noob-codess" class="social-button social-button--github" aria-label="GitHub">
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github white-icon"></i>
           </a>
         </div>
 
@@ -50,10 +51,15 @@
 
         <div class="child" style="position: relative; top: 10%; left: 50%; transform: translateX(-50%);">
 
+
           <button type="button" id="user-menu-button" style="margin-right: 10%; margin-top: 10%;"></button>
           <img src="https://iili.io/HWcVewB.jpg" alt="shashank viswanadha"
-            style="height: 100px; width: 100px; border-radius: 50%;" />
-          </button>
+            style="height: 100px; width: 100px; border-radius: 50%; filter: grayscale(100%);"
+            onmouseover="this.style.filter='grayscale(0%)';" onmouseout="this.style.filter='grayscale(100%)';" />
+
+
+
+
         </div>
         <div id="aboutme-container" class="child" style="text-align: center; top: 10%; left: 50%;">
           <div class="container">
@@ -64,12 +70,23 @@
           </div>
 
         </div>
-        <footer style="position: relative; bottom: 0; left: 0; width: 100%;">
-
+        <footer>
+          <script src="script.js"></script>
           <p
-            style="position: fixed;padding: 10px; bottom: 0; left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
-            shashank viswanadha</p>
+            style="position: relative;padding: 5px;text-align: center; bottom: 0; left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+            Shashank | Dallas, Texas</p>
 
+          <p id="datetime"
+            style="position: relative;padding: 5px; bottom: 0; left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+          </p>
+          <p
+            style="position: relative;padding: 5px; bottom: 0; left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+            No Ads, No Tracking.</p>
+          <p
+            style="position: relative;padding: 5px; bottom: 0; left: 2px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+            Happy<span id="current-day"
+              style="position: relative;padding: 5px; bottom: 0; left: 0px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;"></span>
+          </p>
         </footer>
       </div>
 

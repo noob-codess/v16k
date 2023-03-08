@@ -7,25 +7,28 @@
     rel="stylesheet">
 <link rel="stylesheet" href="./style.css">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="DevOps Engineer, automation, cloud computing, continuous integration, deployment, monitoring">
+    <meta name="keywords"
+        content="DevOps Engineer, automation, cloud computing, continuous integration, deployment, monitoring">
     <title>v16k - core competencies</title>
 </head>
 <!--For google analytics-->
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-368FHDKMGB"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-368FHDKMGB');
+    gtag('config', 'G-368FHDKMGB');
 </script>
+<script src="script.js"></script>
 
-<body>
+<body onload="displayDay()">
     <div id="main-wrapper" class="fancy-scrollbar">
         <div id="main">
             <div id="content">
@@ -38,26 +41,29 @@
                 <div class="social-buttons">
                     <a href="https://github.com/noob-codess" class="social-button social-button--github"
                         aria-label="GitHub">
-                        <i class="fab fa-github"></i>
+                        <i class="fab fa-github white-icon"></i>
                     </a>
                 </div>
 
 
 
-                <div class="child" style="position: relative; top: 10%; left: 50%; transform: translateX(-50%);">
+                <div class="child"
+                    style="display: flex; justify-content: center;position: relative; top: 10%; left: 50%; transform: translateX(-50%);">
                     <a href="https://www.credly.com/badges/71bcffc6-d503-48d0-bb85-3aaaced775d2/public_url"
                         target="_blank">
                         <button type="button" id="user-menu-button"
                             style="margin-right: 10%; margin-top: 10%;"></button>
                         <img src="https://iili.io/HW5ire1.png" alt="AWS Solution Architect - Associate (SAA-C03)"
-                            style="height: 100px; width: 100px; border-radius: 50%;" title="Click to Verify" />
+                            style="height: 100px; width: 100px; border-radius: 50%;" title="Click to Verify"
+                             />
                     </a>
                     <a href="https://www.credly.com/badges/18a102bd-8e99-49d3-9b40-20d8db95ab90/public_url"
                         target="_blank">
                         <button type="button" id="user-menu-button"
                             style="margin-right: 10%; margin-top: 10%;"></button>
                         <img src="https://iili.io/HW5ig5P.png" alt="Microsoft Azure - Fundamentals (AZ-900)"
-                            style="height: 100px; width: 100px; border-radius: 50%;" title="Click to Verify" />
+                            style="height: 100px; width: 100px; border-radius: 50%;" title="Click to Verify"
+                            />
                     </a>
 
 
@@ -66,7 +72,7 @@
 
                 <div id="apps-container">
                     <a>
-                        <img src="https://iili.io/HW7aVmG.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7aVmG.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">GIT</span>
                             <span class="url">version control</span>
@@ -74,7 +80,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7aO1S.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7aO1S.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">Linux</span>
                             <span class="url">Operating System</span>
@@ -82,7 +88,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7aXIf.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7aXIf.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">HTML, CSS, JavaScript</span>
                             <span class="url">Web Development</span>
@@ -90,7 +96,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7al1I.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7al1I.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">Agile</span>
                             <span class="url">Framework/Methodologies</span>
@@ -98,7 +104,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7aG7n.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7aG7n.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">Bash, Shell</span>
                             <span class="url">Scripting</span>
@@ -106,7 +112,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7ahX4.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7ahX4.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">Jenkins</span>
                             <span class="url">CI/CD</span>
@@ -114,7 +120,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7McwF.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7McwF.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">Azure Pipelines</span>
                             <span class="url">CI/CD</span>
@@ -122,7 +128,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7a0gt.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7a0gt.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">Microsoft-Azure</span>
                             <span class="url">Cloud platform</span>
@@ -130,7 +136,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7aEdX.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7aEdX.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">AWS</span>
                             <span class="url">Cloud platform</span>
@@ -138,7 +144,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7av29.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7av29.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">Nginx</span>
                             <span class="url">Server</span>
@@ -146,7 +152,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7VYl4.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7VYl4.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">Tomcat</span>
                             <span class="url">Server</span>
@@ -154,7 +160,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7aMes.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7aMes.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">Docker</span>
                             <span class="url">Container Platform</span>
@@ -162,7 +168,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7aNB2.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7aNB2.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">Kubernetes</span>
                             <span class="url">Container Platform</span>
@@ -170,7 +176,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7aSku.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7aSku.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">Terraform</span>
                             <span class="url">Infrastructure as Code</span>
@@ -178,7 +184,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7ajLl.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7ajLl.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">Jira</span>
                             <span class="url">Communication/Collaboration</span>
@@ -186,7 +192,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7acqN.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7acqN.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">Ansible</span>
                             <span class="url">Configuration Management</span>
@@ -194,7 +200,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7a87e.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7a87e.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">Prometheous</span>
                             <span class="url">Monitoring/Alerting</span>
@@ -202,7 +208,7 @@
                     </a>
 
                     <a>
-                        <img src="https://iili.io/HW7aer7.png" style="height: 24px; width: 24px;">
+                        <img src="https://iili.io/HW7aer7.png" style="height: 36px; width: 36px;">
                         <div class="label">
                             <span class="name">Grafana</span>
                             <span class="url">Monitoring/Alerting</span>
@@ -211,25 +217,57 @@
 
                 </div>
 
-                <footer style="position: relative; bottom: 0; left: 0; width: 100%;">
-
-
-
-                    <p
-                        style="position: relative;padding: 10px; bottom: 0; left: 0px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
-                        shashank viswanadha<a target="_blank" href="https://icons8.com">All Icons by Icons8</a></p>
-                    <script src="https://kit.fontawesome.com/94fb225352.js" crossorigin="anonymous"></script>
-                </footer>
-
 
             </div>
+            <footer style="position:relative;">
 
+                <p
+                    style="padding: 5px;text-align: center; bottom: 0; left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                    Shashank | Dallas, Texas</p>
 
+                <p id="datetime"
+                    style="padding: 5px;  left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                    <script>
+                        function updateDateTime() {
+                            console.log("updateDateTime function called");
+                            var today = new Date();
+                            var date = today.toLocaleDateString();
+                            var time = today.toLocaleTimeString();
+                            var dateTime = date + " " + time;
+                            document.getElementById("datetime").innerHTML = dateTime;
+                        }
 
+                        setInterval(updateDateTime, 1000);
+                    </script>
+                </p>
+                <p
+                    style="padding: 5px; bottom: 0; left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                    No Ads, No Tracking.</p>
+                <p
+                    style="padding: 5px; bottom: 0; left: 2px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                    Happy<span id="current-day"
+                        style="padding: 5px; bottom: 0; left: 0px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;"></span>
+                </p>
+                <p><a target="_blank" href="https://icons8.com"
+                        style="color: rgb(170, 172, 173);position: relative; font-size: x-small;">All Icons by
+                        Icons8</a>
+                    <script src="https://kit.fontawesome.com/94fb225352.js" crossorigin="anonymous"></script>
+                </p>
+                <script src="./script.js"></script>
+            </footer>
         </div>
 
 
+
     </div>
+
+
+
+    </div>
+
+
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

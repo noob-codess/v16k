@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="DevOps Engineer, automation, cloud computing, continuous integration, deployment, monitoring">
+    <title>v16k - project1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/xterm/css/xterm.css" />
+
+    <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+    <script type="text/javascript" ; src="script.js"></script>
+
+    <!-- Include the xterm.js JavaScript library -->
+    <script src="https://unpkg.com/xterm/lib/xterm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-2OYQJuu/ozl3SwGN3LAUhOv7egO/Th8pLZSE+LiX9RcE+TBp1zxs+TtTmwqxJjQ+LTLsGtDRtn3t+kCRXtFv1A=="
+        crossorigin="anonymous" />
+</head>
+<!--For google analytics-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-368FHDKMGB"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-368FHDKMGB');
+</script>
+
+<body>
+
+    <div id="main-wrapper" class="fancy-scrollbar">
+        <div id="main">
+            <div id="content">
+                <div id="links-container" style="display: flex; justify-content: flex-start;">
+                    <a href="index.html">About</a>
+                    <a href="expertise.html">Tech-Stack/Expertise</a>
+                    <a href="projects.html">My Projects</a>
+                </div>
+
+                <div class="social-buttons">
+                    <a href="https://github.com/noob-codess" class="social-button social-button--github"
+                        aria-label="GitHub">
+                        <i class="fab fa-github white-icon"></i>
+                    </a>
+                </div>
+
+
+                <div class='parent'>
+                    <div class='child'>
+                        <main>
+                            <div class="atom">
+                                <div class="electron"></div>
+                                <div class="electron-alpha"></div>
+                                <div class="electron-omega"></div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+
+                <div id="project-container">
+                    <H1>Setup Web Application stack (locally)</H1>
+                    <button onclick="goBack()" style="background-color:black; height:auto; width: auto; border-radius: 10%; padding: 5px; display: flex; position: fixed; right: 0; bottom: 6%; padding-right: 5px; margin-right: 25px;" >Back</button>
+                    
+                    <h2>About:</h2>
+                    <p>We will be setting a Multi-Tier Web Application Stack.</p>
+                    <p>We will be setting it up locally (laptop/desktop)</p>
+                    <h2>Tools Required:</h2>
+                    <ul>
+                        <li>Hypervisor: Oracle Virtual Box</li>
+                        <li>Automation: Vagrant</li>
+                        <li>CLI: GIT BASH</li>
+                        <li>IDE: VS Code</li>
+                    </ul>
+                    <h2>Objective:</h2>
+                    <ul>
+                        <li>VM Automation locally.</li>
+                    </ul>
+                    <h2>Grand Project (VPROFILE PROJECT)</h2>
+                    <ul>
+                        <li>Architecture of Project Services:</li>
+                        <ul>
+                            <li>NGINX</li>
+                            <li>Tomcat</li>
+                            <li>RabbitMQ</li>
+                            <li>MemCached</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </ul>
+                    <h2>Architecture of Automated Setup</h2>
+                    <ul>
+                        <li>Vagrant</li>
+                        <li>Virtual Box</li>
+                        <li>Git Bash</li>
+                    </ul>
+                    <h2>Architectural Design (Manual Setup):</h2>
+                    <div>
+                        <a>
+                            <img id="big-image" src="https://iili.io/HWLw4ea.jpg"></a>
+                    </div>
+
+                    <h2>Flow of Execution</h2>
+                    <ol>
+                        <li>Setup Tools</li>
+                        <li>Clone Source code</li>
+                        <li>cd into Vargrant file</li>
+                        <li>Bring up VMs</li>
+                        <li>Validate</li>
+                        <li>Setup Services
+                            <ul>
+                                <li>mySQL</li>
+                                <li>Memcached</li>
+                                <li>Rabbit MQ</li>
+                                <li>Nginx</li>
+                                <li>Tomcat</li>
+                                <li>Application Build and Deploy</li>
+                            </ul>
+                        </li>
+                        <li>Verify from Browser</li>
+                    </ol>
+
+                    <h2>STEPS:</h2>
+                    <p>VM Setup</p>
+                    <ul>
+                        <li>Clone source code - <a href="https://github.com/noob-codess/grandproject1.git"
+                                target="_blank" style="color: aquamarine;">link</a></li>
+                        <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                    <code style="text-align: left; ">git clone "https://github.com/noob-codess/grandproject1.git"
+                                    </code></pre>
+
+                        <li>Enter into the repository on your local</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">cd (repository_name)
+                                </code></pre>
+                        </div>
+                        <li>Once you are into the repository/directory, look for Vagrant File. Run the command to
+                            provision the servers mentioned in the Vagrant File</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">vagrant up
+                                </code></pre>
+                            <p style="font-size: xx-small;">Note: Bringing up all the vm’s may take a long time based on
+                                various factors. If vm setup stops in the middle, run the same command again</p>
+                            <p style="font-size: xx-small;">Info: All the vm’s hostname and /etc/hosts file entries will
+                                be automatically updated.</p>
+                        </div>
+                        <li>You can verify in your, Oracle Virtual Box whether these servers are up and running or not.
+                        </li>
+                        <a><img id="big-image" src="https://iili.io/HWQsloB.png" alt="Oracle Virtual Box"></a>
+
+
+                        <p>Provisioning</p>
+                        <ul>
+                            <li>Nginx (Web Server)</li>
+                            <li>Tomcat (Application Server)</li>
+                            <li>Rabbit MQ (Message Broker/Queuing Agent)</li>
+                            <li>Memcached (Database Caching)</li>
+                            <li>MySQL (SQL Database)</li>
+
+                            <p>Steps should follow the sequence mentioned below:</p>
+                            <ol>
+                                <li>My SQL</li>
+                                <li>Memcached</li>
+                                <li>RabbitMQ</li>
+                                <li>Tomcat</li>
+                                <li>Nginx</li>
+                            </ol>
+                        </ul>
+                    </ul>
+
+                    <p>MySQL Setup</p>
+                    <ul>
+                        <li>Login to the DB Virtual Machine</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">vagrant ssh DB01
+                                </code></pre>
+                        </div>
+                        <li>Verify Hosts entry if entries missing update it with IP and hostnames </li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">cat /etc/hosts
+                                </code></pre>
+                        </div>
+                        <li>Switch to root user</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">sudo -i
+                                </code></pre>
+                        </div>
+                        <li>Update OS with latest patches</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">yum update -y
+                                </code></pre>
+                        </div>
+                        <li>Set Repository</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">yum install epel-release -y 
+                                </code></pre>
+                        </div>
+                        <li>Install Maria DB package</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">yum install git mariadb-server -y  
+                                </code></pre>
+                        </div>
+                        <li>Starting and Enabling Maria DB server</li>
+                        <div id="terminal-container">
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">systemctl start mariadb
+                                    systemctl enable mariadb  
+                                </code></pre>
+                        </div>
+                        <li>Run MySQL secure installation script</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">mysql_secure_installation 
+                                </code></pre>
+                        </div>
+                        <p style="font-size: xx-small;">Set the DB root password. I have used admin123 as password</p>
+                        <li>Set DB name and users</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">mysql -u root -padmin123 
+                                    mysql> create database accounts; 
+                                    mysql> grant all privileges on accounts.* TO 'admin'@’%’ identified by 'admin123' ; 
+                                    mysql> FLUSH PRIVILEGES; mysql> exit; 
+                                     
+                                </code></pre>
+                        </div>
+                        <li>Download Source Code and Initialize Database</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">git clone https://github.com/noob-codess/grandproject1.git 
+                                    cd grandproject 
+                                    mysql -u root -padmin123 accounts < src/main/resources/db_backup.sql 
+                                    mysql -u root -padmin123 accounts 
+                                    mysql> show tables; 
+                                     
+                                </code></pre>
+                        </div>
+                        <li>Restart MariaDB server</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">systemctl restart mariadb 
+                                </code></pre>
+                        </div>
+                        <li>Starting the firewall and allowing the mariadb to access from port no. 3306 </li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">systemctl start firewalld 
+                                    systemctl enable firewalld 
+                                    firewall-cmd --get-active-zones 
+                                    firewall-cmd --zone=public --add-port=3306/tcp --permanent 
+                                    firewall-cmd --reload 
+                                    systemctl restart mariadb
+                                     
+                                </code></pre>
+                        </div>
+
+                    </ul>
+
+                    <p>Memcached Setup</p>
+                    <ul>
+                        <li>Login to the Memcached Virtual Machine</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">vagrant ssh MC01
+                                </code></pre>
+                        </div>
+                        <li>Verify Hosts entry if entries missing update it with IP and hostnames </li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">cat /etc/hosts
+                                </code></pre>
+                        </div>
+                        <li>Switch to root user</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">sudo -i
+                                </code></pre>
+                        </div>
+                        <li>Update OS with latest patches</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">yum update -y
+                                </code></pre>
+                        </div>
+                        <li>Set Repository</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">yum install epel-release -y 
+                                </code></pre>
+                        </div>
+                        <li>Install, start & enable memcache on port 11211</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">yum install epel-release -y 
+                                    yum install memcached -y 
+                                    systemctl start memcached 
+                                    systemctl enable memcached 
+                                    systemctl status memcached 
+                                    memcached -p 11211 -U 11111 -u memcached -d 
+                                     
+                                </code></pre>
+                        </div>
+                        <li>Starting the firewall and allowing the port 11211 to access memcache </li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">systemctl enable firewalld 
+                                    systemctl start firewalld 
+                                    systemctl status firewalld 
+                                    firewall-cmd --add-port=11211/tcp --permanent 
+                                    firewall-cmd --reload 
+                                    memcached -p 11211 -U 11111 -u memcache -d
+                                     
+                                </code></pre>
+                        </div>
+                    </ul>
+                    <p>RabbitMQ Setup</p>
+                    <ul>
+                        <li>Login to the RabbitMQ Virtual Machine</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">vagrant ssh RMQ01
+                                </code></pre>
+                        </div>
+                        <li>Verify Hosts entry if entries missing update it with IP and hostnames </li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">cat /etc/hosts
+                                </code></pre>
+                        </div>
+                        <li>Switch to root user</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">sudo -i
+                                </code></pre>
+                        </div>
+                        <li>Update OS with latest patches</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">yum update -y
+                                </code></pre>
+                        </div>
+                        <li>Set Repository</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">yum install epel-release -y 
+                                </code></pre>
+                        </div>
+                        <li>Install Dependencies</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                            <code style="text-align: left; ">sudo yum install wget -y 
+                                                            cd /tmp/ 
+                                                            wget http://packages.erlang-solutions.com/erlang-solutions-2.0-1.noarch.rpm 
+                                                            sudo rpm -Uvh erlang-solutions-2.0-1.noarch.rpm 
+                                                            sudo yum -y install erlang socat
+                 
+                            </code></pre>
+                        </div>
+                        <li>Install RabbitMQ</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                            <code style="text-align: left; ">curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh | sudo bash 
+                                                            sudo yum install rabbitmq-server -y                      
+                            </code></pre>
+                        </div>
+                        <li>Start and Enable RabbitMQ</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                            <code style="text-align: left; ">sudo systemctl start rabbitmq-server 
+                                                            sudo systemctl enable rabbitmq-server 
+                                                            sudo systemctl status rabbitmq-server     
+                            </code></pre>
+                        </div>
+                        <li>Config Change</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                            <code style="text-align: left; ">sudo sh -c 'echo "[{rabbit, [{loopback_users, []}]}]." > /etc/rabbitmq/rabbitmq.config' 
+                                                            sudo rabbitmqctl add_user test test 
+                                                            sudo rabbitmqctl set_user_tags test administrator 
+                            </code></pre>
+                        </div>
+                        <li>Restart RabbitMQ service</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                            <code style="text-align: left; ">systemctl restart rabbitmq-server      
+                            </code></pre>
+                        </div>
+                        <li>Enabling the firewall and allowing port 25672 to access the rabbitmq permanently </li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                            <code style="text-align: left; ">systemctl start firewalld 
+                                                            systemctl enable firewalld 
+                                                            firewall-cmd --get-active-zones 
+                                                            firewall-cmd --zone=public --add-port=25672/tcp --permanent 
+                                                            firewall-cmd –reload
+                            </code></pre>
+                        </div>
+
+                    </ul>
+
+                    <p>Tomcat Setup</p>
+                    <ul>
+                        <li>Login to the Tomcat Virtual Machine</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">vagrant ssh DB01
+                                </code></pre>
+                        </div>
+                        <li>Verify Hosts entry if entries missing update it with IP and hostnames </li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">cat /etc/hosts
+                                </code></pre>
+                        </div>
+                        <li>Switch to root user</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">sudo -i
+                                </code></pre>
+                        </div>
+                        <li>Update OS with latest patches</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">yum update -y
+                                </code></pre>
+                        </div>
+                        <li>Set Repository</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">yum install epel-release -y 
+                                </code></pre>
+                        </div>
+
+                        <li>Install Dependencies</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">yum install java-1.8.0-openjdk -y 
+                                                                yum install git maven wget -y 
+                                     
+                                </code></pre>
+                        </div>
+                        <li>Change dir to /tmp</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">cd /tmp/ Download & Tomcat Package 
+                                    wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.tar.gz 
+                                    tar xzvf apache-tomcat-8.5.37.tar.gz     
+                                </code></pre>
+                        </div>
+                        <li>Add Tomcat User</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">useradd --home-dir /usr/local/tomcat8 --shell /sbin/nologin tomcat  
+                                </code></pre>
+                        </div>
+                        <li>Copy data to tomcat home directory</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">cp -r /tmp/apache-tomcat-8.5.37/* /usr/local/tomcat8/ Make tomcat user owner of tomcat home dir 
+                                    chown -R tomcat.tomcat /usr/local/tomcat8                                      
+                                </code></pre>
+                        </div>
+                        <li>Setup systemd for tomcat Update file with following content</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">vi /etc/systemd/system/tomcat.service  
+                                </code></pre>
+                            <p style="font-size: x-small;">Copy the below code in the file</p>
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                    <code style="text-align: left; ">[Unit]
+                                        Description=Tomcat 
+                                        After=network.target 
+                                        
+                                        [Service] 
+                                        User=tomcat 
+                                        WorkingDirectory=/usr/local/tomcat8 
+                                        Environment=JRE_HOME=/usr/lib/jvm/jre 
+                                        Environment=JAVA_HOME=/usr/lib/jvm/jre 
+                                        Environment=CATALINA_HOME=/usr/local/tomcat8 
+                                        Environment=CATALINE_BASE=/usr/local/tomcat8 
+                                        ExecStart=/usr/local/tomcat8/bin/catalina.sh run 
+                                        ExecStop=/usr/local/tomcat8/bin/shutdown.sh 
+                                        SyslogIdentifier=tomcat-%i 
+                                        
+                                        [Install] 
+                                        WantedBy=multi-user.target 
+                                          
+                                    </code></pre>
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                        <code style="text-align: left; ">systemctl daemon-reload 
+                                            systemctl start tomcat 
+                                            systemctl enable tomcat 
+                                              
+                                        </code></pre>
+                        </div>
+                        <li>Enabling the firewall and allowing port 8080 to access the tomcat </li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">systemctl start firewalld 
+                                    systemctl enable firewalld 
+                                    firewall-cmd --get-active-zones 
+                                    firewall-cmd --zone=public --add-port=8080/tcp --permanent 
+                                    firewall-cmd –reload
+                                         
+                                </code></pre>
+                        </div>
+                    </ul>
+
+                    <p>Code Build and Deploy</p>
+                    <ul>
+                        <li>Clone Source Code</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                            <code style="text-align: left; ">git clone https://github.com/noob-codess/grandproject1.git  
+                            </code></pre>
+                        </div>
+                        <li>Build Code: Go inside the directory</li>
+
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                            <code style="text-align: left; ">mvn install     
+                            </code></pre>
+                        </div>
+                        <li>Deploy Artifact</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                            <code style="text-align: left; ">systemctl stop tomcat 
+                                sleep 120 
+                                rm -rf /usr/local/tomcat8/webapps/ROOT* # cp target/vprofile-v2.war /usr/local/tomcat8/webapps/ROOT.war 
+                                systemctl start tomcat 
+                                sleep 300 # chown tomcat.tomcat usr/local/tomcat8/webapps -R 
+                                systemctl restart tomcat
+                                 
+                            </code></pre>
+                        </div>
+                    </ul>
+                    <p>Nginx Setup</p>
+                    <ul>
+                        <li>Login to the Nginx vm</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">vagrant ssh web01 
+                                </code></pre>
+                        </div>
+                        <li>Verify Hosts entry, if entries missing update it with IP and hostnames </li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">cat /etc/hosts 
+                                </code></pre>
+                        </div>
+                        <li>Update OS with latest patches</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">sudo apt update
+                                                                sudo apt upgrade
+                                </code></pre>
+                        </div>
+                        <li>Install nginx</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">apt install nginx -y
+                                </code></pre>
+                        </div>
+                        <li>Create Nginx config file with below content</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">vi /etc/nginx/sites-available/vproapp 
+                                </code></pre>
+                        </div>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">upstream vproapp { 
+                                    server app01:8080; 
+                                    } 
+                                    server { 
+                                    listen 80; 
+                                    location / { 
+                                    proxy_pass http://vproapp;
+                                    } 
+                                    } 
+                                    
+                                </code></pre>
+                        </div>
+                        <li>Remove default nginx config file</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">rm -rf /etc/nginx/sites-enabled/default 
+                                </code></pre>
+                        </div>
+                        <li>Create link to activate website </li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">ln -s /etc/nginx/sites-available/vproapp /etc/nginx/sites-enabled/vproapp 
+                                </code></pre>
+                        </div>
+                        <li>Restart Nginx</li>
+                        <div id="terminal-container">
+
+                            <pre><button class="copy-btn" onclick="copyCode()">Copy</button>
+                                <code style="text-align: left; ">systemctl restart nginx
+                                </code></pre>
+                        </div>
+
+                    </ul>
+
+                    <p style="padding-top: 10%;">
+                        Now verify what we developed on the browser. "http://192.168.33.11"</p>
+
+                    <p style="font-size: x-small;">Username - admin_vp</p>
+                    <p style="font-size: x-small;">Password - admin_vp</p>
+
+
+
+
+                    <p style="padding-top: 10%;">Our Webserver will successfully navigate to the Application server. And
+                        we can see that when we
+                        check the user for the first time, the data is being fetched from the database and next time
+                        onwords it is being fetched by the memcached server.</p>
+
+                    <p style="padding-bottom:5% ;">This architecture setup is usefull and provide better performance and
+                        there will be minimum lag
+                        for users.</p>
+
+
+
+                </div>
+                <footer style="position:fixed; background-color: rgb(49, 49, 57)">
+
+                    <p
+                        style="padding: 5px;text-align: center; bottom: 0; left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                        Shashank | Dallas, Texas</p>
+
+                    <p id="datetime"
+                        style="padding: 5px;  left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                        <script>
+                            function updateDateTime() {
+                                console.log("updateDateTime function called");
+                                var today = new Date();
+                                var date = today.toLocaleDateString();
+                                var time = today.toLocaleTimeString();
+                                var dateTime = date + " " + time;
+                                document.getElementById("datetime").innerHTML = dateTime;
+                            }
+
+                            setInterval(updateDateTime, 1000);
+                        </script>
+                    </p>
+                    <p
+                        style="padding: 5px; bottom: 0; left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                        No Ads, No Tracking.</p>
+                    <p
+                        style="padding: 5px; bottom: 0; left: 2px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                        Happy<span id="current-day"
+                            style="padding: 5px; bottom: 0; left: 0px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;"></span>
+                    </p>
+                    <p><a target="_blank" href="https://icons8.com"
+                            style="color: rgb(170, 172, 173);position: relative; font-size: x-small;">All Icons by
+                            Icons8</a>
+                        <script src="https://kit.fontawesome.com/94fb225352.js" crossorigin="anonymous"></script>
+                    </p>
+                    <script src="./script.js"></script>
+                </footer>
+
+                <script src="https://kit.fontawesome.com/94fb225352.js" crossorigin="anonymous"></script>
+
+            </div>
+
+
+</body>
+
+</html>

@@ -3,70 +3,104 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+  rel="stylesheet">
 <link rel="stylesheet" href="./style.css">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="DevOps Engineer, automation, cloud computing, continuous integration, deployment, monitoring,">
-    <title>v16k - my-projects</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="DevOps Engineer, automation, cloud computing, continuous integration, deployment, monitoring,">
+  <title>v16k - my-projects</title>
 </head>
 <!--For google analytics-->
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-368FHDKMGB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-368FHDKMGB');
 </script>
 
-<body>
-    <div id="main-wrapper" class="fancy-scrollbar">
-        <div id="main">
-            <div id="content">
-                <div id="links-container" style="display: flex; justify-content: flex-start;">
-                    <a href="index.html">About</a>
-                    <a href="expertise.html">Tech-Stack/Expertise</a>
-                    <a href="projects.html">My Projects</a>
-                </div>
+<body onload="displayDay()">
+  <div id="main-wrapper" class="fancy-scrollbar">
+    <div id="main">
+      <div id="content">
+        <div id="links-container" style="display: flex; justify-content: flex-start;">
+          <a href="index.html">About</a>
+          <a href="expertise.html">Tech-Stack/Expertise</a>
+          <a href="projects.html">My Projects</a>
+        </div>
 
-                <div class="social-buttons">
-                  <a href="https://github.com/noob-codess" class="social-button social-button--github" aria-label="GitHub">
-                      <i class="fab fa-github"></i>
-                  </a>
+        <div class="social-buttons">
+          <a href="https://github.com/noob-codess" class="social-button social-button--github" aria-label="GitHub">
+            <i class="fab fa-github white-icon"></i>
+          </a>
+        </div>
+
+
+
+        <div class='parent'>
+          <div class='child'>
+            <main>
+              <div class="atom">
+                <div class="electron"></div>
+                <div class="electron-alpha"></div>
+                <div class="electron-omega"></div>
               </div>
-                
+            </main>
+          </div>
+        </div>
+
+        <p style="text-align: center; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">If you have any
+          project idea around DevOps you can reach me out for collaboration</p>
 
 
-                <div class='parent'>
-                    <div class='child'>
-                      <main>
-                        <div class="atom">
-                          <div class="electron"></div>
-                          <div class="electron-alpha"></div>
-                          <div class="electron-omega"></div>
-                        </div>
-                      </main>
-                    </div>
-                </div>
-
-                <p style="text-align: center;">Need to add my projects here, meanwhile you can check my github. If you have any project idea around DevOps you can reach me out for collaboration</p>
-
-                <!--
-                <div id="apps-container">
-                    <a href="https://developer.hashicorp.com/terraform/docs">
-                      <img src="https://iili.io/HWqpXDl.png" style="height: 24px; width: 24px;">
-                      <div class="label">
-                        <span class="name">Terraform Documentation</span>
-                        <span class="url">terraform.io</span>
-                      </div>
-                    </a>
-        
+        <div id="appsproject-container" >
+          <a href="project1.html" target="_blank">
+            
+            <div class="label">
+              <span class="name" style="padding: 2px;">Setup Web Application Stack (Locally)</span>
+              <span class="url" style="padding: 5px;">Tech Stack Used:</span>
+              <span class="techstack" style="padding:10px;">
+                <div class="image-grid">
+                <figure>
+                  <img src="https://iili.io/HW7av29.png" alt="Nginx" style="height: 24px; width: 24px;">
+                  <figcaption>Nginx</figcaption>
+                </figure>
+                <figure>
+                  <img src="https://iili.io/HW7VYl4.png" alt="tomcat"style="height: 24px; width: 24px;">
+                  <figcaption>tomcat</figcaption>
+                </figure>
+                <figure>
+                  <img src="https://iili.io/HW6yoej.png" alt="Memcached"style="height: 24px; width: 24px;">
+                  <figcaption>Memcached</figcaption>
+                </figure>
+                <figure>
+                  <img src="https://iili.io/HWNEkT7.png" alt="RabbitMQ"style="height: 24px; width: 24px;">
+                  <figcaption>RabbitMQ</figcaption>
+                </figure>
+                <figure>
+                  <img src="https://iili.io/HWNE63x.png" alt="Vagrant"style="height: 24px; width: 24px;">
+                  <figcaption>Vagrant</figcaption>
+                </figure>
+                <figure>
+                  <img src="https://iili.io/HWNEvj9.png" alt="Oracle VirtualBox"style="height: 24px; width: 24px;">
+                  <figcaption>Oracle VirtualBox</figcaption>
+                </figure>
+                <figure>
+                  <img src="https://iili.io/HWN6Mrv.png" alt="MySQL"style="height: 24px; width: 24px;">
+                  <figcaption>MySQL</figcaption>
+                </figure>
+              </div>
+              </span>
+            </div>
+          </a>
+          <!--
                     <a href="https://chat.openai.com">
                       <svg width="26" height="26" viewBox="0 0 41 41" fill="#10A37F" xmlns="http://www.w3.org/2000/svg"
                         stroke-width="1.5" class="h-6 w-6">
@@ -129,14 +163,49 @@
                 -->
 
 
-                <footer style="position: fixed; bottom: 0; left: 0; width: 100%;">
-                    
-                    <script src="https://kit.fontawesome.com/94fb225352.js" crossorigin="anonymous"></script>
-                </footer>
-            </div>
-           
-            
-    </div>
+          <footer style="position:fixed; bottom: 0; width: 100%;">
+
+            <p
+                style="padding: 5px;text-align: center; bottom: 0; left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                Shashank | Dallas, Texas</p>
+
+            <p id="datetime"
+                style="padding: 5px;  left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                <script>
+                    function updateDateTime() {
+                        console.log("updateDateTime function called");
+                        var today = new Date();
+                        var date = today.toLocaleDateString();
+                        var time = today.toLocaleTimeString();
+                        var dateTime = date + " " + time;
+                        document.getElementById("datetime").innerHTML = dateTime;
+                    }
+
+                    setInterval(updateDateTime, 1000);
+                </script>
+            </p>
+            <p
+                style="padding: 5px; bottom: 0; left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                No Ads, No Tracking.</p>
+            <p
+                style="padding: 5px; bottom: 0; left: 2px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                Happy<span id="current-day"
+                    style="padding: 5px; bottom: 0; left: 0px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;"></span>
+            </p>
+            <p><a target="_blank" href="https://icons8.com"
+                    style="color: rgb(170, 172, 173);position: relative; font-size: x-small; right: 0;">All Icons by
+                    Icons8</a>
+                <script src="https://kit.fontawesome.com/94fb225352.js" crossorigin="anonymous"></script>
+            </p>
+            <script src="script.js"></script>
+
+
+            <script src="https://kit.fontawesome.com/94fb225352.js" crossorigin="anonymous"></script>
+          </footer>
+        </div>
+
+
+      </div>
 </body>
 
 </html>
