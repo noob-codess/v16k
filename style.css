@@ -581,6 +581,41 @@ pre {
     border-bottom-right-radius: 0.5rem;
 }
 
+#blogs-container {
+    display: grid;
+    grid-template-columns: repeat(1, fit-content);
+    margin: 0rem 0rem;
+    font-family: "Noto Sans", sans-serif; /* Change the font family */
+    font-size: small;
+}
+.date-added {
+    font-size: 0.8rem; /* Adjust the font size as needed */
+    color: #868585;
+}
+
+.brief {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+}
+
+.read-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0b4f5a; /* Change to your desired background color */
+    color: white; /* Change to your desired text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 12px; /* Adjust the font size as needed */
+}
+
+.read-button:hover {
+    background-color: #00eaff; /* Change to a slightly different shade for hover */
+    color: #000;
+    /* You can also adjust other properties for the hover state */
+}
 .image-grid {
     display: flex;
     flex-wrap: wrap;

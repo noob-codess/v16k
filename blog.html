@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="DevOps Engineer, automation, cloud computing, continuous integration, deployment, monitoring">
+    <title>v16k - core competencies</title>
+    <link rel="icon" type="image/png" href="https://iili.io/HXRaiKb.png">
+</head>
+<!--For google analytics-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-368FHDKMGB"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-368FHDKMGB');
+</script>
+<script src="script.js"></script>
+
+<body onload="displayDay()">
+    <div id="main-wrapper" class="fancy-scrollbar">
+        <div id="main">
+            <div id="content">
+
+                <div class="social-buttons">
+                    <a href="https://github.com/noob-codess" class="social-button social-button--github"
+                        aria-label="GitHub">
+                        <i class="fab fa-github white-icon"></i>
+                    </a>
+                </div>
+                <div id="links-container" style="display: flex; justify-content: flex-start;">
+                    <a href="index.html">About</a>
+                    <a href="expertise.html">Tech-Stack/Expertise</a>
+                    <a href="projects.html">My Projects</a>
+                    <a href="blog.html">My Blogs</a>
+                </div>
+
+                
+
+                <div class='parent'>
+                    <div class='child'>
+                        <main>
+                            <div class="atom">
+                                <div class="electron"></div>
+                                <div class="electron-alpha"></div>
+                                <div class="electron-omega"></div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+
+                <div>
+                    <div id="appsproject-container">
+                        <a>
+                            <div id="blogs-container">
+                                <script type="text/javascript" id="articles" src="app.js"></script>
+                            </div>
+                        </a>
+
+                        
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+            <footer style="position:bottom;">
+
+                <p
+                    style="padding: 5px;text-align: center; bottom: 0; left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                    v16k | kansas City, MO</p>
+
+                <p id="datetime"
+                    style="padding: 5px;  left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                    <script>
+                        function updateDateTime() {
+                            console.log("updateDateTime function called");
+                            var today = new Date();
+                            var date = today.toLocaleDateString();
+                            var time = today.toLocaleTimeString();
+                            var dateTime = date + " " + time;
+                            document.getElementById("datetime").innerHTML = dateTime;
+                        }
+
+                        setInterval(updateDateTime, 1000);
+                    </script>
+                </p>
+                <p
+                    style="padding: 5px; bottom: 0; left: 10px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                    No Ads, No Tracking.</p>
+                <p
+                    style="padding: 5px; bottom: 0; left: 2px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;">
+                    Happy<span id="current-day"
+                        style="padding: 5px; bottom: 0; left: 0px; font-size: 10px; color: rgba(254, 253, 253, 0.863);font-family: 'Nunito', sans-serif;"></span>
+                </p>
+
+                <script src="./script.js"></script>
+            </footer>
+        </div>
+
+
+
+    </div>
+
+
+
+    </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
