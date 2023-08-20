@@ -62,6 +62,7 @@ gql(GET_USER_ARTICLES, { page: 0 })
             let link = document.createElement('a');
             link.innerText = 'Read blog';
             link.classList.add('read-button');
+            link.target = '_blank';
             link.href = `https://www.v16k.xyz/${article.slug}`;
 
 
