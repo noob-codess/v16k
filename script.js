@@ -6,7 +6,7 @@ function type() {
   if (index < text.length) {
     typingText.innerHTML += text.charAt(index);
     index++;
-    setTimeout(type, 50);
+    setTimeout(type, 20);
   }
 }
 

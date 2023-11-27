@@ -1,3 +1,5 @@
+/*
+
 async function gql(query, variables = {}) {
     const data = await fetch('https://api.hashnode.com/', {
         method: 'POST',
@@ -75,7 +77,7 @@ gql(GET_USER_ARTICLES, { page: 0 })
 
         document.querySelector('.app').appendChild(container);
     });
-/*
+ ------Comment below -------------
 
 gql(query).then((resp)=>{              
     const apiresponse = resp.data.user.publication.posts;
@@ -108,8 +110,13 @@ gql(query).then((resp)=>{
 
     });
 })
-*/
+-----------Comment above------
 document.getElementById('articles').parentNode.innerHTML = `
 <div class="app">
     
 </div>`;
+
+
+ 
+
+*/
