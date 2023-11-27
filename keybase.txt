@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/shashank_in
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://v16k.com
+  * I am shashank_in (https://keybase.io/shashank_in) on keybase.
+  * I have a public key ASB_CxvwUlnt_Cnz-8JS9azw6xvdYT1vEwdpj3SA6W2ukwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120521410e89c1702ae133443b1dc24be603b926d3479db7d192d6acf85140c38480a",
+      "host": "keybase.io",
+      "kid": "01207f0b1bf05259edfc29f3fbc252f5acf0eb1bdd613d6f1307698f7480e96dae930a",
+      "uid": "08db60268d39b422bbbd9bc043bea719",
+      "username": "shashank_in"
+    },
+    "merkle_root": {
+      "ctime": 1701117544,
+      "hash": "315921a55230b34e447d47f9530bed7aa2de15fe34edeffdc29b4dc94eac8fa0267f76b3d2d4be3f527d3a44c6d94504f23821293c9e136894eaa24efd3c4089",
+      "hash_meta": "f5607aae71376750cbdabbc32f08f8f6415e481c2908babde7f3759c5715cc80",
+      "seqno": 25185338
+    },
+    "service": {
+      "entropy": "+Q5PE88T7mqJwzZEopFPJJiB",
+      "hostname": "v16k.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.2.3"
+  },
+  "ctime": 1701117552,
+  "expire_in": 504576000,
+  "prev": "e219a7703eeab40fca18cbe088c2df0a395982c3ab8c743a320fd0fc98585fca",
+  "seqno": 34,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgfwsb8FJZ7fwp8/vCUvWs8Osb3WE9bxMHaY90gOltrpMKp3BheWxvYWTESpcCIsQg4hmncD7qtA/KGMvgiMLfCjlZgsOrjHQ6Mg/Q/JhYX8rEIIN6b9TlhbO4IoZ50r0nQuKHhfEJwU+bxId4d8IcrpZlAgHCo3NpZ8RAxfek7lvNEk8Jnr3wW4EoSBAM1jKpbK9vk7XkCfla4crYzm3slV3vayKEmgATU8RiGtCut+qRmJP7jBaybkq8BahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJiyWjkOec70f8Jq1lcfJ9MCqxEtmLziTWHhhdxN3OmLo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/shashank_in
+
+==================================================================
